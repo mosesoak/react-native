@@ -100,7 +100,7 @@ var TabBarItemIOS = React.createClass({
     // preserve state between tab transitions
     if (this.state.hasBeenSelected) {
       tabContents =
-        <StaticContainer shouldUpdate={this.props.selected}>
+        <StaticContainer>
           {this.props.children}
         </StaticContainer>;
     } else {
